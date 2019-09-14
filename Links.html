@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<body bgcolor="#dcd8c0">
+
+<style>
+	.bigButton {
+		background-color: var(--colour);
+		border: none;
+		color: white;
+		padding: 200px 300px;
+		text-align: center;
+		font-size: 16px;
+		cursor: pointer;
+		border-radius: 16px;
+		font-family: cursive, sans-serif;
+
+	}
+
+	.button {
+	  background-color: var(--colour);
+	  border: none;
+	  color: white;
+	  padding: 15px 25px;
+	  text-align: center;
+	  font-size: 16px;
+	  cursor: pointer;
+	  border-radius: 16px;
+	}
+
+	.bigButton:hover {
+	  background-color: var(--colourH);
+	}
+	.button:hover {
+	  background-color: var(--colourH);
+	}
+</style>
+
+<script>
+
+	//Links for all of the web pages
+	var fk4Main = "http://www.ece.mcmaster.ca/~field/courses/ee3fk4"
+	var fk4Lec = "https://www.ece.mcmaster.ca/~field/courses/ee3fk4/lectures/index.htm"
+	var fk4Tut = "https://www.ece.mcmaster.ca/~field/courses/ee3fk4/tutorials/index.htm"
+	var fk4Lab = "https://www.ece.mcmaster.ca/~field/courses/ee3fk4/labs/index.htm"
+	var fk4Exam = "https://www.ece.mcmaster.ca/~field/courses/ee3fk4/exams/index.htm"
+
+	var tq3Main = "http://www.ece.mcmaster.ca/~field/courses/ee3tq3"
+	var tq3Lec = "https://www.ece.mcmaster.ca/~field/courses/ee3tq3/lectures/index.htm"
+	var tq3Tut = "https://www.ece.mcmaster.ca/~field/courses/ee3tq3/tutorials/index.htm"
+	var tq3Ass = "https://www.ece.mcmaster.ca/~field/courses/ee3tq3/assigns/index.htm"
+	var tq3Exam = "https://www.ece.mcmaster.ca/~field/courses/ee3tq3/exams/index.htm"
+
+	var fk4Link = [fk4Main, fk4Lec, fk4Tut, fk4Lab, fk4Exam];
+	var tq3Link = [tq3Main, tq3Lec, tq3Tut, tq3Ass, ta3Exam];
+
+	let fk4But = "";
+	let tq3But = "";
+
+
+	//open in a new window the given url
+	function openURL(url){
+		window.open(url);
+	}
+</script>
+</head>
+<body>
+
+<h1></h1>
+
+<!-- make all the buttons for each of the hyperlinks-->
+
+<div style = "position:absolute; left:100px; top:0px;">
+<button class="bigButton" style = "--colour:#15a6d3 ; --colourH:teal" onclick="openURL(fk4Main)">3FK4</button>
+</div>
+
+<div style = "position:absolute; left:100px; top:500px;">
+<button class="button" style = "--colour:#15a6d3 ; --colourH:teal" onclick="openURL(fk4Lec)">Lecture</button>
+</div>
+<div style = "position:absolute; left:100px; top:600px;">
+<button class="button" style = "--colour:#15a6d3 ; --colourH:teal" onclick="openURL(fk4Tut)">Tutorial</button>
+</div>
+<div style = "position:absolute; left:100px; top:700px;">
+<button class="button" style = "--colour:#15a6d3 ; --colourH:teal" onclick="openURL(fk4Lab)">Labs</button>
+</div>
+<div style = "position:absolute; left:100px; top:800px;">
+<button class="button" style = "--colour:#15a6d3 ; --colourH:teal" onclick="openURL(fk4Exam)">Exam</button>
+</div>
+
+
+
+<div style = "position:absolute; left:775px; top:0px;">
+<button class="bigButton" style = "--colour:#ef3f54; --colourH:#741303" onclick="openURL(tq3Main)">3TQ3</button>
+</div>
+
+<div style = "position:absolute; left:775px; top:500px;">
+<button class="button" style = "--colour:#ef3f54; --colourH:#741303" onclick="openURL(tq3Lec)">Lecture</button>
+</div>
+<div style = "position:absolute; left:775px; top:600px;">
+<button class="button" style = "--colour:#ef3f54; --colourH:#741303" onclick="openURL(tq3Tut)">Tutorial</button>
+</div>
+<div style = "position:absolute; left:775px; top:700px;">
+<button class="button" style = "--colour:#ef3f54; --colourH:#741303" onclick="openURL(tq3Ass)">Assignments</button>
+</div>
+<div style = "position:absolute; left:775px; top:800px;">
+<button class="button" style = "--colour:#ef3f54; --colourH:#741303" onclick="openURL(tq3Exam)">Exam</button>
+</div>
+
+</body>
+</html>
